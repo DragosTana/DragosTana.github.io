@@ -1,29 +1,9 @@
+/* Reset basic styles */
 body {
     font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-}
-
-nav ul {
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
 }
 
 main {
@@ -34,30 +14,29 @@ section {
     margin-bottom: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* Main container styles */
+.contact-buttons {
+    display: flex;           /* Use flexbox */
+    gap: 10px;               /* Control spacing between buttons */
+    flex-wrap: wrap;         /* Wrap buttons if necessary */
+}
+
+.contact-buttons a {
+    text-decoration: none;
+    display: block;          /* Ensure <a> is block-level */
+    margin: 0;
+    padding: 0;
 }
 
 .contact-buttons a button {
     background-color: #f0f0f0;
     border: none;         
     padding: 8px 8px;     
-    margin: 5px;            
+    margin: 0;               /* Remove margin from buttons */
     cursor: pointer;
     outline: none;          
-    border-radius: 0;       
-}
-
-.contact-buttons a {
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
+    border-radius: 0;       /* Square buttons */
+    display: block;          /* Ensure <button> behaves as block */
 }
 
 .contact-buttons a button:hover {
