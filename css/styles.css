@@ -36,7 +36,11 @@ section {
     cursor: pointer;
     outline: none;          
     border-radius: 0;       /* Square buttons */
-    display: block;          /* Ensure <button> behaves as block */
+    display: flex;           /* Flexbox to center content */
+    align-items: center;     /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    width: 40px;             /* Ensure uniform width */
+    height: 40px;            /* Ensure uniform height */
 }
 
 .contact-buttons a button:hover {
@@ -47,3 +51,19 @@ section {
     font-size: 18px;
     color: #333;
 }
+
+/* Ensure text in buttons looks consistent */
+.contact-buttons a button {
+    font-size: 18px;         /* Match icon size */
+    color: #333;             /* Match icon color */
+}
+
+.profile-image {
+    display: block;
+    margin: 0 auto; /* Centers the image */
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Keep it square for circular shape */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the space */
+}
+
