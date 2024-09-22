@@ -43,3 +43,28 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.contact-buttons a button {
+    background-color: #f0f0f0;
+    border: none;         
+    padding: 8px 8px;     
+    margin: 5px;            
+    cursor: pointer;
+    outline: none;          
+    border-radius: 0;       
+}
+
+.contact-buttons a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-buttons a button:hover {
+    background-color: #e0e0e0;
+}
+
+.contact-buttons i {
+    font-size: 18px;
+    color: #333;
+}
