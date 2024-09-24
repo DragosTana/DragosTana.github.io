@@ -1,0 +1,28 @@
+/* Reset basic styles */
+body {
+    font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 900px; /* Fixed width for the main content */
+    margin: 0 auto;   /* Centers the content horizontally */
+    padding: 20px;    /* Optional padding for some space */
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+
+section {
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 600px) {
+    main {
+        max-width: 90%; /* Makes it more responsive on mobile */
+    }
+}
