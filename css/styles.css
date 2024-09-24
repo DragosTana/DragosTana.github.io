@@ -7,11 +7,19 @@ body {
 }
 
 main {
-    padding: 20px;
+    max-width: 600px; /* Fixed width for the main content */
+    padding: 20px;    /* Optional padding for some space */
 }
 
 section {
     margin-bottom: 20px;
+}
+
+
+@media (max-width: 600px) {
+    main {
+        max-width: 90%; /* Makes it more responsive on mobile */
+    }
 }
 
 /* Main container styles */
