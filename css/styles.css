@@ -75,3 +75,68 @@ section {
     object-fit: cover; /* Ensures the image covers the space */
 }
 
+
+#Experience h1 {
+    /* This will inherit the style of your other H1 tags */
+    margin-bottom: 25px;
+}
+
+.experience-item {
+    display: flex;
+    gap: 20px; /* Space between logo and details */
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0; /* Separator line */
+}
+
+/* Removes the separator line from the very last item */
+.experience-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.experience-logo {
+    flex-shrink: 0; /* Prevents logo from shrinking */
+}
+
+.experience-logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain; /* Ensures logo fits well without distortion */
+    border-radius: 4px; /* Slightly rounded corners for the logo */
+    border: 1px solid #ddd;
+}
+
+.experience-details h3 {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #111;
+}
+
+.experience-details .company-name {
+    margin: 2px 0 5px 0;
+    font-size: 1em;
+}
+
+.experience-details .date-location {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    color: #666; /* Muted color for secondary info */
+}
+
+.experience-details ul {
+    margin: 0;
+    padding-left: 20px; /* Indent for bullet points */
+    color: #333;
+}
+
+.experience-details ul li {
+    margin-bottom: 8px; /* Space between list items */
+}
+
+.experience-details ul li:last-child {
+    margin-bottom: 0;
+}
+
